@@ -1,0 +1,23 @@
+# Parameters for dataset:
+# ==============================================================================
+dataset.name = 'dsprites_full'
+
+# Parameters for discretizer:
+# ==============================================================================
+discretizer.discretizer_fn = @histogram_discretizer
+discretizer.num_bins = 20
+
+# Parameters for evaluation:
+# ==============================================================================
+evaluation.evaluation_fn = @mig
+evaluation.name = 'mig'
+evaluation.random_seed = 3638918503
+
+# Parameters for histogram_discretizer:
+# ==============================================================================
+# None.
+
+# Parameters for mig:
+# ==============================================================================
+mig.batch_size = 16
+mig.num_train = 10000

@@ -1,0 +1,23 @@
+# Parameters for dataset:
+# ==============================================================================
+dataset.name = 'dsprites_full'
+
+# Parameters for discretizer:
+# ==============================================================================
+discretizer.discretizer_fn = @histogram_discretizer
+discretizer.num_bins = 20
+
+# Parameters for evaluation:
+# ==============================================================================
+evaluation.evaluation_fn = @unsupervised_metrics
+evaluation.name = 'unsupervised'
+evaluation.random_seed = 2051556033
+
+# Parameters for histogram_discretizer:
+# ==============================================================================
+# None.
+
+# Parameters for unsupervised_metrics:
+# ==============================================================================
+unsupervised_metrics.batch_size = 16
+unsupervised_metrics.num_train = 10000

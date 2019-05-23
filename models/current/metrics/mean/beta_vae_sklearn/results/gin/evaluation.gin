@@ -1,0 +1,15 @@
+# Parameters for beta_vae_sklearn:
+# ==============================================================================
+beta_vae_sklearn.batch_size = 64
+beta_vae_sklearn.num_eval = 5000
+beta_vae_sklearn.num_train = 10000
+
+# Parameters for dataset:
+# ==============================================================================
+dataset.name = 'dsprites_full'
+
+# Parameters for evaluation:
+# ==============================================================================
+evaluation.evaluation_fn = @beta_vae_sklearn
+evaluation.name = 'beta_vae_sklearn'
+evaluation.random_seed = 3071714933

@@ -1,0 +1,3 @@
+===== MIN COST MATCHING =====
+Matching : 
+The min cost matchig is: 14722.2

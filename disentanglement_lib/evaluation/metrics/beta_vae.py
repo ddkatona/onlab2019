@@ -37,6 +37,7 @@ def compute_beta_vae_sklearn(ground_truth_data,
                              batch_size=gin.REQUIRED,
                              num_train=gin.REQUIRED,
                              num_eval=gin.REQUIRED):
+
   """Computes the BetaVAE disentanglement metric using scikit-learn.
 
   Args:

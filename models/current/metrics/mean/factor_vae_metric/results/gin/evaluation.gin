@@ -1,0 +1,20 @@
+# Parameters for dataset:
+# ==============================================================================
+dataset.name = 'dsprites_full'
+
+# Parameters for evaluation:
+# ==============================================================================
+evaluation.evaluation_fn = @factor_vae_score
+evaluation.name = 'factor_vae_metric'
+evaluation.random_seed = 2340255427
+
+# Parameters for factor_vae_score:
+# ==============================================================================
+factor_vae_score.batch_size = 64
+factor_vae_score.num_eval = 5000
+factor_vae_score.num_train = 10000
+factor_vae_score.num_variance_estimate = 10000
+
+# Parameters for prune_dims:
+# ==============================================================================
+prune_dims.threshold = 0.05

@@ -1,0 +1,11 @@
+{
+  "dataset.name": "'dsprites_full'",
+  "discretizer.discretizer_fn": "@histogram_discretizer",
+  "discretizer.num_bins": "20",
+  "evaluation.evaluation_fn": "@modularity_explicitness",
+  "evaluation.name": "'modularity_explicitness'",
+  "evaluation.random_seed": "1819583497",
+  "modularity_explicitness.batch_size": "16",
+  "modularity_explicitness.num_test": "5000",
+  "modularity_explicitness.num_train": "10000"
+}

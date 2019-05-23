@@ -1,0 +1,13 @@
+# Parameters for dataset:
+# ==============================================================================
+dataset.name = 'dsprites_full'
+
+# Parameters for mean_representation:
+# ==============================================================================
+# None.
+
+# Parameters for postprocess:
+# ==============================================================================
+postprocess.name = 'mean'
+postprocess.postprocess_fn = @mean_representation
+postprocess.random_seed = 2357136044

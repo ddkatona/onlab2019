@@ -1,0 +1,10 @@
+{
+  "dataset.name": "'dsprites_full'",
+  "downstream_task.batch_size": "16",
+  "downstream_task.num_test": "5000",
+  "downstream_task.num_train": "[10, 100, 1000, 10000]",
+  "evaluation.evaluation_fn": "@downstream_task",
+  "evaluation.name": "'downstream_task_logistic_regression'",
+  "evaluation.random_seed": "3830135878",
+  "predictor.predictor_fn": "@logistic_regression_cv"
+}

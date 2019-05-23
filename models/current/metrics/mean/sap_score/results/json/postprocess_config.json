@@ -1,0 +1,6 @@
+{
+  "dataset.name": "'dsprites_full'",
+  "postprocess.name": "'mean'",
+  "postprocess.postprocess_fn": "@mean_representation",
+  "postprocess.random_seed": "2357136044"
+}

@@ -1,0 +1,6 @@
+{
+  "dataset.name": "'dsprites_full'",
+  "postprocess.name": "'sampled'",
+  "postprocess.postprocess_fn": "@sampled_representation",
+  "postprocess.random_seed": "2546248239"
+}

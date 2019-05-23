@@ -1,0 +1,10 @@
+{
+  "dataset.name": "'dsprites_full'",
+  "discretizer.discretizer_fn": "@histogram_discretizer",
+  "discretizer.num_bins": "20",
+  "evaluation.evaluation_fn": "@mig",
+  "evaluation.name": "'mig'",
+  "evaluation.random_seed": "4138900056",
+  "mig.batch_size": "16",
+  "mig.num_train": "10000"
+}

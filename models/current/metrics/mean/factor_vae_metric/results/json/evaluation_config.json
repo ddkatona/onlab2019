@@ -1,0 +1,11 @@
+{
+  "dataset.name": "'dsprites_full'",
+  "evaluation.evaluation_fn": "@factor_vae_score",
+  "evaluation.name": "'factor_vae_metric'",
+  "evaluation.random_seed": "2340255427",
+  "factor_vae_score.batch_size": "64",
+  "factor_vae_score.num_eval": "5000",
+  "factor_vae_score.num_train": "10000",
+  "factor_vae_score.num_variance_estimate": "10000",
+  "prune_dims.threshold": "0.05"
+}

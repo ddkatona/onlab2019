@@ -70,6 +70,7 @@ def convolute_and_save(module_path, signature, export_path, transform_fn,
           transform_checkpoint_path, transform_variables)
 
     with tf.Session() as sess:
+      
       # Initialize all variables, this also loads the TFHub parameters.
       sess.run(tf.global_variables_initializer())
       # Load the transformer variables from the checkpoint.

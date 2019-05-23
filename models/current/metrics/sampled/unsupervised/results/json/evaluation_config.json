@@ -1,0 +1,10 @@
+{
+  "dataset.name": "'dsprites_full'",
+  "discretizer.discretizer_fn": "@histogram_discretizer",
+  "discretizer.num_bins": "20",
+  "evaluation.evaluation_fn": "@unsupervised_metrics",
+  "evaluation.name": "'unsupervised'",
+  "evaluation.random_seed": "2051556033",
+  "unsupervised_metrics.batch_size": "16",
+  "unsupervised_metrics.num_train": "10000"
+}

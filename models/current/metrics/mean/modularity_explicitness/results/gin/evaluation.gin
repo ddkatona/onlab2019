@@ -1,0 +1,24 @@
+# Parameters for dataset:
+# ==============================================================================
+dataset.name = 'dsprites_full'
+
+# Parameters for discretizer:
+# ==============================================================================
+discretizer.discretizer_fn = @histogram_discretizer
+discretizer.num_bins = 20
+
+# Parameters for evaluation:
+# ==============================================================================
+evaluation.evaluation_fn = @modularity_explicitness
+evaluation.name = 'modularity_explicitness'
+evaluation.random_seed = 1819583497
+
+# Parameters for histogram_discretizer:
+# ==============================================================================
+# None.
+
+# Parameters for modularity_explicitness:
+# ==============================================================================
+modularity_explicitness.batch_size = 16
+modularity_explicitness.num_test = 5000
+modularity_explicitness.num_train = 10000

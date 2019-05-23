@@ -1,0 +1,15 @@
+# Parameters for dataset:
+# ==============================================================================
+dataset.name = 'dsprites_full'
+
+# Parameters for dci:
+# ==============================================================================
+dci.batch_size = 16
+dci.num_test = 5000
+dci.num_train = 10000
+
+# Parameters for evaluation:
+# ==============================================================================
+evaluation.evaluation_fn = @dci
+evaluation.name = 'dci'
+evaluation.random_seed = 3626093760

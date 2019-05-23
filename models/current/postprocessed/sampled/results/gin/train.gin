@@ -1,0 +1,61 @@
+# Parameters for vae/AdamOptimizer:
+# ==============================================================================
+vae/AdamOptimizer.beta1 = 0.9
+vae/AdamOptimizer.beta2 = 0.999
+vae/AdamOptimizer.epsilon = 1e-08
+vae/AdamOptimizer.learning_rate = 0.0001
+vae/AdamOptimizer.name = 'Adam'
+vae/AdamOptimizer.use_locking = False
+
+# Parameters for bernoulli_loss:
+# ==============================================================================
+bernoulli_loss.subtract_true_image_entropy = False
+
+# Parameters for conv_encoder:
+# ==============================================================================
+# None.
+
+# Parameters for dataset:
+# ==============================================================================
+dataset.name = 'dsprites_full'
+
+# Parameters for decoder:
+# ==============================================================================
+decoder.decoder_fn = @deconv_decoder
+
+# Parameters for deconv_decoder:
+# ==============================================================================
+# None.
+
+# Parameters for encoder:
+# ==============================================================================
+encoder.encoder_fn = @conv_encoder
+encoder.num_latent = 10
+
+# Parameters for export_as_tf_hub:
+# ==============================================================================
+export_as_tf_hub.drop_collections = None
+
+# Parameters for model:
+# ==============================================================================
+model.batch_size = 64
+model.eval_steps = 1000
+model.model = @vae()
+model.model_num = 250
+model.name = 'beta_vae'
+model.random_seed = 0
+model.training_steps = 300000
+
+# Parameters for reconstruction_loss:
+# ==============================================================================
+reconstruction_loss.activation = 'logits'
+reconstruction_loss.loss_fn = @bernoulli_loss
+
+# Parameters for vae:
+# ==============================================================================
+vae.beta = 16.0
+
+# Parameters for vae_optimizer:
+# ==============================================================================
+vae_optimizer.learning_rate = None
+vae_optimizer.optimizer_fn = @vae/AdamOptimizer
